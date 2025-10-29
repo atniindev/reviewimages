@@ -5,6 +5,13 @@ To get started, create `.env` files based on these examples. For a quick setup, 
 Once the `.env` files are in place, start the project with:
 docker compose up
 
+If you rename the `.env.example` files to `.env`, you can access:  
+- Frontend UI: [http://localhost:3000](http://localhost:3000)  
+- API: [http://localhost:8000](http://localhost:8000)
+
+**Note:** An additional endpoint was added for testing: [http://localhost:8000/api/images/confirmed](http://localhost:8000/api/images/confirmed)  
+This endpoint allows you to easily track the progress after confirming/correcting labels.
+
 For development mode, start the project with:
 docker compose -f docker-compose.dev.yml up
 
@@ -34,4 +41,5 @@ If I had another week to work on this project, I would focus on improving usabil
 - Add fields to database table like `created_at`, `last_updated`, `deleted_at`, `created_by`, and `last_modified_by` to better track data changes and support auditing 
 - Refine the interface and make it responsive for smaller screens.  
 - Implement automated testing starting with backend unit tests, and integrate them into a CI/CD pipeline for continuous validation and reliability.
+
 - Structured logging and monitoring. Add centralized logs and monitoring tools for backend services to track performance and errors.
