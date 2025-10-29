@@ -3,7 +3,7 @@ Two `.env.example` files are included: one in the root directory and another ins
 To get started, create `.env` files based on these examples. For a quick setup, you can simply rename the `.env.example` files to `.env`.
 
 Once the `.env` files are in place, start the project with:
-docker compose up
+`docker compose up`
 
 If you rename the `.env.example` files to `.env`, you can access:  
 - Frontend UI: [http://localhost:3000](http://localhost:3000)  
@@ -13,7 +13,7 @@ If you rename the `.env.example` files to `.env`, you can access:
 This endpoint allows you to easily track the progress after confirming/correcting labels.
 
 For development mode, start the project with:
-docker compose -f docker-compose.dev.yml up
+`docker compose -f docker-compose.dev.yml up`
 
 # Technical choices and assumptions
 ## Backend
@@ -43,3 +43,4 @@ If I had another week to work on this project, I would focus on improving usabil
 - Implement automated testing starting with backend unit tests, and integrate them into a CI/CD pipeline for continuous validation and reliability.
 
 - Structured logging and monitoring. Add centralized logs and monitoring tools for backend services to track performance and errors.
+
