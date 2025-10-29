@@ -1,0 +1,81 @@
+# =====================
+# General
+# =====================
+.DS_Store
+*.log
+*.pyc
+__pycache__/
+*.swp
+*.swo
+
+# =====================
+# Environment files
+# =====================
+.env
+.env.*
+!.env.example
+
+# =====================
+# Python / FastAPI backend
+# =====================
+/backend/__pycache__/
+/backend/.pytest_cache/
+/backend/.mypy_cache/
+/backend/.coverage
+/backend/coverage.xml
+/backend/.venv/
+/backend/venv/
+/backend/dist/
+/backend/build/
+/backend/.ruff_cache/
+/backend/.cache/
+
+# =====================
+# Node / React frontend
+# =====================
+/frontend/node_modules/
+/frontend/dist/
+/frontend/.vite/
+/frontend/.eslintcache
+/frontend/coverage/
+/frontend/.cache/
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+/frontend/pnpm-debug.log*
+
+# =====================
+# Docker
+# =====================
+/data/
+/pgdata/
+/tmp/
+/docker-compose.override.yml
+*.pid
+*.tar
+
+# =====================
+# Build artifacts
+# =====================
+*.egg-info/
+build/
+dist/
+htmlcov/
+site/
+
+# =====================
+# IDEs and editors
+# =====================
+.vscode/
+.idea/
+*.iml
+*.sublime-project
+*.sublime-workspace
+
+# =====================
+# OS generated files
+# =====================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+Icon?
